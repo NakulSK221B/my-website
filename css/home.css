@@ -15,12 +15,12 @@
     --secondary-color: #d8d8d8;
     --other-color: #12141c;
     --h1-font: 5.2rem;
-    --h2-font: 3.5rem;
+    --h2-font: 3.8rem;
     --h3-font: 2.5rem;
-    --h4-font: 1.8rem;
+    --h4-font: 1.9rem;
     --h5-font: 1.5rem;
     --h6-font: 1.2rem;
-    --p-font: 1.1rem;
+    --p-font: 1.4rem;
     --logo-font: 2.5rem;
     --border-radius: 0.5rem;
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -92,7 +92,7 @@ header.sticky
 }
 section
 {
-    padding: 100px 16% 19px;
+    padding: 80px 16% 10px;
 }
 .home
 {
@@ -198,6 +198,61 @@ section
         margin-top: 0px;
     }
 }
-
+@media screen and (max-width: 768px)
+{
+    header
+    {
+        padding: 16px 5%;
+    }
+    .home-text h1
+    {
+        font-size: var(--h2-font);
+    }
+    .home-text h3
+    {
+        font-size: var(--h4-font);
+    }
+    .home-text p
+    {
+        font-size: var(--p-font);
+    }
+    .home-text h4
+    {
+        font-size: var(--h5-font);
+    }
+    .btn
+    {
+        padding: 10px 20px;
+        font-size: var(--h5-font);
+    }
+}
+@media screen and (max-width: 480px)
+{
+    header
+    {
+        padding: 16px 5%;
+    }
+    .home-text h1
+    {
+        font-size: var(--h3-font);
+    }
+    .home-text h3
+    {
+        font-size: var(--h5-font);
+    }
+    .home-text p
+    {
+        font-size: var(--p-font);
+    }
+    .home-text h4
+    {
+        font-size: var(--h6-font);
+    }
+    .btn
+    {
+        padding: 10px 20px;
+        font-size: var(--h6-font);
+    }
+}
 
 
