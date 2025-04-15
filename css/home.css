@@ -45,15 +45,15 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 16%;
+    padding: 22px 10%;
     border-bottom: 1px solid transparent;
     transition: all 0.4s ease;
 }
 header.sticky
 {
     background-color: var(--bg-color);
-    border-bottom: 1px solid var(--secondary-color);
-    padding: 16px 16%;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 16px 10%;
     transition: all 0.4s ease;
 }
 .logo
@@ -69,6 +69,8 @@ header.sticky
 }
 .navbar a
 {
+    display: flex;
+    align-items: center;
     color: var(--text-color);
     font-size: var(--p-font);
     font-weight: 700;
@@ -76,6 +78,7 @@ header.sticky
     border-radius: var(--border-radius);
     margin: 0 2px;
     /* margin-left: 30px; */
+    text-align: center;
     transition: all 0.4s ease;
 }
 .navbar a:hover
@@ -92,7 +95,7 @@ header.sticky
 }
 section
 {
-    padding: 80px 16% 10px;
+    padding: 80px 10% 10px;
 }
 .home
 {
@@ -114,7 +117,7 @@ section
     margin-bottom: 1rem;
     line-height: 1.1;
     letter-spacing: 2px;
-    padding: 15px 0;
+    padding: 10px 0;
     left: -15px;
 }
 .home-text h1 span
@@ -152,9 +155,9 @@ section
 }
 .btn:hover
 {
-    background-color: transparent;
+    /* background-color: transparent; */
     transform: scale(1.1) translateY(-5px);
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
 }
 .scrolling-text
 {
@@ -198,11 +201,70 @@ section
         margin-top: 0px;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1300px)
 {
+    :root
+    {
+        --h1-font: 4rem;
+        --h2-font: 3rem;
+        --h3-font: 2.5rem;
+        --h4-font: 2rem;
+        --h5-font: 1.5rem;
+        --h6-font: 1.2rem;
+        --p-font: 1rem;
+        --logo-font: 2rem;
+    }
+    header
+    {
+        padding: 16px 8%;
+    }
+    header.sticky
+    {
+        padding: 8px 8%;
+    }
+    .home-text h1
+    {
+        font-size: var(--h2-font);
+    }
+    .home-text h3
+    {
+        font-size: var(--h4-font);
+    }
+    .home-text p
+    {
+        font-size: var(--p-font);
+    }
+    .home-text h4
+    {
+        font-size: var(--h5-font);
+    }
+    .btn
+    {
+        padding: 10px 20px;
+        font-size: var(--h5-font);
+    }   
+    
+}
+@media screen and (max-width: 1080px)
+{
+    :root
+    {
+        --h1-font: 4rem;
+        --h2-font: 3rem;
+        --h3-font: 2.5rem;
+        --h4-font: 2rem;
+        --h5-font: 1.5rem;
+        --h6-font: 1.2rem;
+        --p-font: 0.8rem;
+        --logo-font: 1.5rem;
+    }
     header
     {
         padding: 16px 5%;
+    }
+    header.sticky
+    {
+        padding: 8px 7%;
     }
     .home-text h1
     {
@@ -226,11 +288,96 @@ section
         font-size: var(--h5-font);
     }
 }
-@media screen and (max-width: 480px)
+@media screen and (max-width: 811px)
 {
+    #menu-icon
+    {
+        display: block;
+    }
+    .navbar
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -600px;
+        right: 0;
+        left: 0;
+        background-color: var(--other-color);
+        width: 100%;
+        text-align: left;
+        transition: all 0.4s ease;
+    }
+    .navbar a
+    {
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .navbar a:hover
+    {
+        background-color: var(--primary-color);
+    }
+    .navbar.active
+    {
+        top: 100%;
+        display: flex;
+        transform: translateY(0);
+    }
+    :root
+    {
+        --h1-font: 3.5rem;
+        --h2-font: 2.8rem;
+        --h3-font: 2.2rem;
+        --h4-font: 1.8rem;
+        --h5-font: 1.4rem;
+        --h6-font: 1.2rem;
+        --p-font: 0.9rem;
+        --logo-font: 1.5rem;
+    }
     header
     {
         padding: 16px 5%;
+    }
+    header.sticky
+    {
+        padding: 8px 5%;
+    }
+    .home-text h1
+    {
+        font-size: var(--h2-font);
+    }
+    .home-text h3
+    {
+        font-size: var(--h4-font);
+    }
+    .home-text p
+    {
+        font-size: var(--p-font);
+    }
+    .home-text h4
+    {
+        font-size: var(--h5-font);
+    }
+}
+@media screen and (max-width: 480px)
+{
+    :root
+    {
+        --h1-font: 3rem;
+        --h2-font: 2.5rem;
+        --h3-font: 2rem;
+        --h4-font: 1.5rem;
+        --h5-font: 1.2rem;
+        --h6-font: 1rem;
+        --p-font: 0.9rem;
+    }
+    header
+    {
+        padding: 16px 3%;
+    }
+    header.sticky
+    {
+        padding: 8px 5%;
     }
     .home-text h1
     {
