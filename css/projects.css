@@ -36,8 +36,9 @@
 .project-box {
     padding: 20px 10px;
     background-color: var(--primary-color);
+    /* display: flex; */
     border-radius: var(--border-radius);
-    /* border: 2px solid var(--secondary-color); */
+    /* border: 5px solid var(--secondary-color); */
     box-shadow: var(--shadow);
     transition: all 0.4s ease;
 }

@@ -67,7 +67,7 @@
 .social-btn
 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
     margin-top: 20px;
@@ -91,7 +91,6 @@
     width: 24px; /* Adjust the size of the image as needed */
     height: 24px; /* Adjust the size of the image as needed */
 }
-
 .github-btn {
     background-color: var(--github-color);
     border-color: transparent;
