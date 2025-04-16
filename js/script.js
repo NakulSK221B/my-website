@@ -21,3 +21,13 @@ const sr = ScrollReveal({
 });
 sr.reveal('.home', {delay:190, origin: 'bottom' });
 sr.reveal('.about, .projects, .career, .contact', { delay:200,origin: 'bottom' }); 
+
+// Form default subject
+
+document.querySelector('.contact-form form').addEventListener('submit', function(event) {
+    const subjectInput = document.getElementById('subject');
+    if (!subjectInput.value.trim()) {
+        subjectInput.value = 'Webpage Form Submission'; // Set default value if the field is empty
+    }
+});
+
