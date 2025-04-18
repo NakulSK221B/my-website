@@ -72,24 +72,3 @@
 .contact-form .btn:hover{
     transform: scale(1.05) translateY(-4px);
 }
-.footer-text{
-    text-align: center;
-    padding: 8px 10px;
-    /* margin-top: 2rem; */
-    color: var(--text-color);
-    /* font-size: var(--p-font); */
-    letter-spacing: 1px;
-}
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border: none;
-    border-radius: var(--border-radius);
-    padding: 10px 15px;
-    font-size: var(--p-font);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}

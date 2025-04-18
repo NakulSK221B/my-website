@@ -19,8 +19,8 @@ const sr = ScrollReveal({
   duration: 2500,
   reset: true
 });
-sr.reveal('.home', {delay:190, origin: 'bottom' });
-sr.reveal('.about, .projects, .career, .contact', { delay:200,origin: 'bottom' }); 
+sr.reveal('.home, .project-title', {delay:190, origin: 'bottom' });
+sr.reveal('.about, .projects, .career, .contact, .project-description, .project-key-features, .my-contributions, .results', { delay:200,origin: 'bottom' }); 
 
 // Form default subject
 
