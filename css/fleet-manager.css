@@ -196,6 +196,49 @@
 {
     color: var(--primary-color);
 }
+.team-acknowledgment
+{
+    padding: 1rem 10%;
+    margin-top: 0rem;
+    align-items: center;
+    justify-content: center;
+}
+.team-acknowledgment-text h3
+{
+    font-size: var(--h3-font);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+.team-acknowledgment-text h4
+{
+    font-size: var(--h4-font);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+.team-acknowledgment-text p
+{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    text-indent: 2rem; /* Added text indentation */
+}
+.team-acknowledgment-text p span
+{
+    color: var(--primary-color);
+}
+.team-acknowledgment-text a
+{
+    color: var(--text-color);
+    font-size: var(--h5-font);
+    font-weight: 500;
+    margin-top: 20px;
+    text-indent: 5rem;
+}
+.team-acknowledgment-text a:hover
+{
+    color: var(--primary-color);
+}
+/* Responsive Styles */
 @media screen and (max-width: 811px) {
     .feature-row {
         grid-template-columns: 1fr; /* Stack the images on smaller screens */

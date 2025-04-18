@@ -28,6 +28,7 @@
 {
     width: 100%;
     height: auto;
+    max-height: 250px;
     object-fit: cover;
     border-radius: var(--border-radius);
     /* border: 2px solid var(--secondary-color); */
@@ -55,4 +56,5 @@
     display: inline-block;
     margin-bottom: 0.5rem;
 }
+
 
