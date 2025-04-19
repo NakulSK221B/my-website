@@ -21,6 +21,7 @@
     width: 50%;
     animation: fadedown 1s linear forwards;
 }
+
 @keyframes fadedown{
     0%{
         opacity: 0;
@@ -53,6 +54,9 @@
 .text-box h3{
     display: inline-block;
     margin-bottom: 10px;
+}
+.text-box p span{
+    font-weight: 900;
 }
 .container img{
     position: absolute;
