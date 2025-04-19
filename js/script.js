@@ -31,3 +31,27 @@ document.querySelector('.contact-form form').addEventListener('submit', function
     }
 });
 
+// static page scrolling
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll("a[data-scroll]");
+
+  navLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+          const target = link.getAttribute("data-scroll");
+
+          // Check if we're already on the homepage
+          if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
+              e.preventDefault();
+
+              // Scroll to target
+              const section = document.querySelector(target);
+              if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                  history.pushState("", document.title, window.location.pathname);
+              }
+          }
+      });
+  });
+});
+
+
